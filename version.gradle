@@ -1,0 +1,65 @@
+ext {
+    //app
+    compileSDKVersion = 28
+    minSDKVersion = 21
+    targetSDKVersion = 28
+
+    // support library for AndroidX
+    appcompatXVersion = "1.2.0-rc01"
+    recycleviewVersion = "1.1.0"
+    materialVersion = "1.2.0"
+    legacySupportVersion = "1.0.0"
+    vetordrawableVersion = "1.1.0"
+    archXVersion = "2.2.0"
+    constraintLayoutVersion = "2.0.0-beta7"
+
+    androidx = [:]
+    androidx.appcompat = "androidx.appcompat:appcompat:$appcompatXVersion"
+    androidx.recyclerview = "androidx.recyclerview:recyclerview:$recycleviewVersion"
+    androidx.material = "com.google.android.material:material:$materialVersion"
+    androidx.supportv4 = "androidx.legacy:legacy-support-v4:$legacySupportVersion"
+    androidx.vectordrawable = "androidx.vectordrawable:vectordrawable:$vetordrawableVersion"
+    androidx.constraintlayout = "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    androidx.core = "androidx.core:core-ktx:1.3.0"
+
+    lifecycle = [:]
+    lifecycle.extensions = "androidx.lifecycle:lifecycle-extensions:$archXVersion"
+    lifecycle.compiler = "androidx.lifecycle:lifecycle-compiler:$archXVersion"
+    lifecycle.reactive_streams = "androidx.lifecycle:lifecycle-reactivestreams:$archXVersion"
+    androidx.lifecycle = lifecycle
+
+    // koin
+    koinVersion = '2.1.6'
+    koin = [:]
+    koin.core = "org.koin:koin-core:$koinVersion"
+    koin.extension = "org.koin:koin-core-ext:$koinVersion"
+    koin.androidscope = "org.koin:koin-androidx-scope:$koinVersion"
+    koin.androidviewmodel = "org.koin:koin-androidx-viewmodel:$koinVersion"
+    koin.androidfragment = "org.koin:koin-androidx-fragment:$koinVersion"
+
+    // rx
+    rxJava2Version = "2.2.19"
+    rxJava2AndroidVersion = "2.1.1"
+    rxJava2KotlinVersion = "2.4.0"
+
+    reactivex = [:]
+    reactivex.rxjava = "io.reactivex.rxjava2:rxjava:$rxJava2Version"
+    reactivex.rxandroid = "io.reactivex.rxjava2:rxandroid:$rxJava2AndroidVersion"
+    reactivex.rxkotlin = "io.reactivex.rxjava2:rxkotlin:$rxJava2KotlinVersion"
+
+    leakCanaryVersion = "2.0"
+    leak_canary = "com.squareup.leakcanary:leakcanary-android:$leakCanaryVersion"
+
+    // widgets
+    widget = [:]
+    widget.material_dialog = "com.afollestad.material-dialogs:core:2.0.0-beta4"
+    widget.skeleton = "com.ethanhua:skeleton:1.1.2"
+    widget.shimmer = "io.supercharge:shimmerlayout:2.1.0"
+    widget.pager_indicator = "com.romandanylyk:pageindicatorview:1.0.3"
+    widget.pin_edittext_field = "com.poovam:pin-edittext-field:1.0.10"
+    widget.ticket = "com.vipulasri:ticketview:1.0.7"
+
+    glide = [:]
+    glide.core = "com.github.bumptech.glide:glide:4.9.0"
+    glide.compiler = "com.github.bumptech.glide:compiler:4.9.0"
+}
