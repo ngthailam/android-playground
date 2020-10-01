@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_1">8dp</dimen>
+    <dimen name="margin_2">16dp</dimen>
+
+    <!-- Icon size -->
+    <dimen name="Cheque_status_icon_size">24dp</dimen>
+    <dimen name="Cheque_leading_icon_size">32dp</dimen>
+</resources>

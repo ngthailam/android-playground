@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clChequeItemContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="true"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardPreventCornerOverlap="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_2">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChequeLeadingIcon"
+            android:layout_width="@dimen/Cheque_leading_icon_size"
+            android:layout_height="@dimen/Cheque_leading_icon_size"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChequeTitle"
+            style="@style/T16M"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_marginEnd="@dimen/margin_2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="@id/ivChequeLeadingIcon"
+            app:layout_constraintEnd_toStartOf="@id/ivChequeStatusIcon"
+            app:layout_constraintStart_toEndOf="@id/ivChequeLeadingIcon"
+            app:layout_constraintTop_toTopOf="@id/ivChequeLeadingIcon"
+            tools:text="Hermes" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChequeStatusIcon"
+            android:layout_width="@dimen/Cheque_status_icon_size"
+            android:layout_height="@dimen/Cheque_status_icon_size"
+            android:layout_marginTop="@dimen/margin_2"
+            android:layout_marginEnd="@dimen/margin_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChequeSubtitleStatus"
+            style="@style/T14R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            android:text="@string/Cheque_list_item_subtitle_status"
+            android:textColor="@color/dark400"
+            app:layout_constraintStart_toEndOf="@id/guideLineDate"
+            app:layout_constraintTop_toBottomOf="@id/ivChequeLeadingIcon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChequeStatus"
+            style="@style/T14R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_1"
+            app:layout_constraintStart_toStartOf="@id/tvChequeSubtitleStatus"
+            app:layout_constraintTop_toBottomOf="@id/tvChequeSubtitleStatus"
+            tools:text="Received" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChequeSubtitleDate"
+            style="@style/T14R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            android:text="@string/Cheque_list_item_subtitle_date"
+            android:textColor="@color/dark400"
+            app:layout_constraintStart_toEndOf="@id/guideLineAmount"
+            app:layout_constraintTop_toBottomOf="@id/ivChequeLeadingIcon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChequeDate"
+            style="@style/T14R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_1"
+            app:layout_constraintStart_toStartOf="@id/tvChequeSubtitleDate"
+            app:layout_constraintTop_toBottomOf="@id/tvChequeSubtitleDate"
+            tools:text="23/09/2020" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChequeSubtitleAmount"
+            style="@style/T14R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_2"
+            android:text="@string/Cheque_list_item_subtitle_amount"
+            android:textColor="@color/dark400"
+            app:layout_constraintStart_toStartOf="@id/ivChequeLeadingIcon"
+            app:layout_constraintTop_toBottomOf="@id/ivChequeLeadingIcon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChequeAmount"
+            style="@style/T16M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/guideLineAmount"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/tvChequeSubtitleAmount"
+            app:layout_constraintTop_toBottomOf="@id/tvChequeSubtitleAmount"
+            tools:text="$1,500,000.42" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

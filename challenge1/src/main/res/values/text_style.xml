@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="T28RB">
+        <item name="android:textSize">28dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+
+    <style name="T20R">
+        <item name="android:textSize">20dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+
+    <style name="T20M">
+        <item name="android:textSize">20dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+
+    <style name="T16R">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+
+    <style name="T16M">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+
+    <style name="T16R20">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+
+    <style name="T16M20">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+
+    <style name="T14R">
+        <item name="android:textSize">14dp</item>
+        <item name="fontFamily">@font/app_regular</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+
+    <style name="T14M">
+        <item name="android:textSize">14dp</item>
+        <item name="fontFamily">@font/app_medium</item>
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+</resources>

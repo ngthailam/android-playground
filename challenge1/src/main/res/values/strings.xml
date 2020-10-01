@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Cheque_list_toolbar_title">My Cheques</string>
+
+    <string name="Cheque_list_menu_item_sidebar_title">Sidebar</string>
+    <string name="Cheque_list_menu_item_draft_title">Drafts</string>
+
+    <string name="Cheque_list_item_subtitle_status">Status</string>
+    <string name="Cheque_list_item_subtitle_amount">Amount</string>
+    <string name="Cheque_list_item_subtitle_date">Date</string>
+    <string name="cheque_detail_menu_item_upload">Upload</string>
+    <string name="cheque_detail_fab_gift">Gift</string>
+    <string name="cheque_detail_fab_message">Message</string>
+</resources>

@@ -44,4 +44,10 @@ dependencies {
     implementation androidx.material
     implementation androidx.supportv4
     implementation androidx.core
+
+    implementation koin.core
+    implementation koin.extension
+    implementation koin.androidscope
+    implementation koin.androidviewmodel
+    implementation koin.androidfragment
 }

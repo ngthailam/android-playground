@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -33,12 +34,25 @@ android {
 }
 
 dependencies {
-
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.2.0'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.1.0'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation androidx.appcompat
+    implementation androidx.recyclerview
+    implementation androidx.material
+    implementation androidx.supportv4
+    implementation androidx.constraintlayout
+    implementation androidx.core
+
+    implementation koin.core
+    implementation koin.extension
+    implementation koin.androidscope
+    implementation koin.androidviewmodel
+    implementation koin.androidfragment
+
+    implementation reactivex.rxkotlin
+    implementation reactivex.rxandroid
+
+    implementation glide.core
+    implementation glide.compiler
 }

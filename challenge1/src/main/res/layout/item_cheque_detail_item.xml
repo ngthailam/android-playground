@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="@dimen/margin_2"
+    android:paddingBottom="@dimen/margin_2">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChequeItemTitle"
+        style="@style/T16R"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_2"
+        android:layout_marginEnd="@dimen/margin_2"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@id/tvChequeItemTotalAmount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Leather jacket Jimmy Choo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChequeItemSubtitle"
+        style="@style/T14R"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/dark300"
+        app:layout_constraintEnd_toEndOf="@id/tvChequeItemTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvChequeItemTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvChequeItemTitle"
+        tools:text="$200.50 x 5 ( including 10% VAT )" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvChequeItemTotalAmount"
+        style="@style/T16M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="$12,525.55" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark500">#22313F</color>
+    <color name="dark400">#80011222</color>
+    <color name="dark300">#4d011222</color>
+    <color name="dark200">#1a011222</color>
+    <color name="dark100">#0d011222</color>
+</resources>
