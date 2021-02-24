@@ -1,22 +1,20 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
-    id 'kotlin-kapt'
 }
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "vn.thailam.androiduichallenge"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -38,17 +36,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    implementation(project(":challenge1"))
-    implementation(project(":challenge3"))
-
     implementation androidx.appcompat
-    implementation androidx.material
     implementation androidx.supportv4
+    implementation androidx.constraintlayout
     implementation androidx.core
-
-    implementation koin.core
-    implementation koin.extension
-    implementation koin.androidscope
-    implementation koin.androidviewmodel
-    implementation koin.androidfragment
 }

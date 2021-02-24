@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <vn.thailam.android.challenge3.widget.CircleView
+        android:id="@+id/cvTopLeft"
+        android:layout_width="@dimen/circle_view_size"
+        android:layout_height="@dimen/circle_view_size"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        app:layout_constraintBottom_toTopOf="@id/cvBottomLeft"
+        app:layout_constraintEnd_toStartOf="@id/cvTopRight"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <vn.thailam.android.challenge3.widget.CircleView
+        android:id="@+id/cvTopRight"
+        android:layout_width="@dimen/circle_view_size"
+        android:layout_height="@dimen/circle_view_size"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        app:layout_constraintBottom_toTopOf="@id/cvBottomRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/cvTopLeft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <vn.thailam.android.challenge3.widget.CircleView
+        android:id="@+id/cvBottomLeft"
+        android:layout_width="@dimen/circle_view_size"
+        android:layout_height="@dimen/circle_view_size"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cvBottomRight"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvTopLeft"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <vn.thailam.android.challenge3.widget.CircleView
+        android:id="@+id/cvBottomRight"
+        android:layout_width="@dimen/circle_view_size"
+        android:layout_height="@dimen/circle_view_size"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/cvBottomLeft"
+        app:layout_constraintTop_toBottomOf="@id/cvTopRight"
+        app:layout_constraintVertical_chainStyle="packed" />
+</merge>
